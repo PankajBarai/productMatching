@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Best Possible Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="commerce">
+        <main>
+            <h1 class="text"><b>Finding Best Search from Amazon</b></h1>
+            <div class="container">
+                <form method="post" action="/">
+                    <label for="query"><b>Enter the Product name</b></label>
+                    <input id="query" name="query" type="text" required />
+                    <br>
+                    <button class="btn btn-success btn-lg float-right" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <h2 class="text"><b>Top 10 Best Possible Product on Amazon</b></h2>
+            <table class="table" style="width:100%">
+                <tr class="table__header">
+                    <th><b>Product Name</b></th>
+                    <th><b>Similarity</b></th>
+                </tr>
+                {% for i in range(count) %}
+                <tr class="table__row">
+                    <td>{{ product[i] }}</td>
+                    <td>{{ similar[i] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <h2 class="text"><b>Top 10 Best Possible Product on FlipKart</b></h2>
+            <table class="table" style="width:100%">
+                <tr class="table__header">
+                    <th><b>Product Name</b></th>
+                    <th><b>Similarity</b></th>
+                </tr>
+                {% for i in range(count) %}
+                <tr class="table__row">
+                    <td>{{ product_flip[i] }}</td>
+                    <td>{{ similar_flip[i] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </main>
+        <hr class="bottom-line">
+        <footer>
+            <p>
+                <a href="https://http://127.0.0.1:5000/" target="_blank">Visit our website</a>
+            </p>
+            <p class="address">123 Testing</p>
+        </footer>
+    </div>
+</body>
+
+</html>
