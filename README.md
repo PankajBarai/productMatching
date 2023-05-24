@@ -14,6 +14,9 @@ In this project, we aim to match products between two popular ecommerce sites, n
 6. Conclusion
 7. References
 
+![image](https://github.com/PankajBarai/productMatching/assets/96985326/2de2ace5-0922-4bf7-9179-bf6c749c6b6d)
+
+
 **1. Introduction:**
 
 Ecommerce sites have a vast collection of products, making it challenging for users to find the same product across different platforms. Our goal is to create a system that can match products between Amazon and Flipkart based on their textual descriptions. By leveraging advanced techniques such as cosine similarity and sentence transformers, we can effectively find similar products.
