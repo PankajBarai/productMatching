@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body,
+div,
+h1,
+h2,
+label,
+input,
+button,
+table,
+th,
+td,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3.2ch;
+  color: blue;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Added */
+  margin: 0 auto; /* Added */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th{
+  font-size: large;
+  color: red;
+  font-size: 2.5ch;
+}
+
+.table__header {
+  background-color: #f2f2f2;
+}
+
+.table__row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bottom-line {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #4caf50;
+}
